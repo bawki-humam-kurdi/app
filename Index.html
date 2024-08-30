@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+ 
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+ 
+
+<body>
+
+   <!-- menu top -->
+
+    <div class="centered">
+       <nav class="navbar">
+
+<h1 style="color:black;margin:0 0 0 10px;">bawki humam kurdi</h1>
+
+            <button class="navbar-toggle">
+                <img src="menu.png" class="navbar-toggle-icon"></img>
+
+            </button>
+            <div class="navbar-links"style="box-shadow: 1px 3px 5px black;">
+                <a href="#book" align="right">کتێبەکان</a>
+                <a href="#aqeda"align="right">عەقیدە</a>
+                <a href="#salaf"align="right">ژیانامەی سەلەف</a>
+                <a href="#qyamat"align="right">نیشانەکانی قیامەت</a>
+            </div>
+        </nav>
+    </div>
+     <div class="container">
+
+   <!-- end -->
+
+
+<div class="rasm">
+<a href="https://t.me/bawki_humam1">
+<img src="IMG-pro.JPG"style="margin:-20px 0 0 -20px;width:380px;height:250px;">
+<p align="center"style="margin:0;color:black;"><strong>Telegram</strong></p>
+</a>
+<hr>
+</div>
+
+<div class="rukar">
+<p align="center"><strong> التوحيد بذرة لا تنبت إلا في أرض البراءة من الشرك
+</strong></p>
+<hr/>
+<p align="center"><strong>
+تەوحید و موسوڵمانێتی تۆوێکە ناڕوێت تەنها لە زەوی بەڕائەت وخۆبەریکردن لە شیرک و ئەهلەکەیدا نەبێت
+</strong></p>
+
+</div>
+
+
+<div class="rukar">
+<p align="center"><strong> با پێکەوە هەنگاو بنێین بەرەو شکاندنی سنوورە پووچەکانی جەهالەتی ئەم سەردەمە
+</strong></p>
+</div>
+
+
+
+<div class="rukar">
+<p align="center"><strong> "بەئاگابە وەک چۆن دەستخستنە ناو ئاگر وچوونە ناوی فەوتێنەری لاشەمانە, 
+ئاواش تێکەڵی ئەهلی شوبهە وبیدەع ولاڕێکان فەوتێنەری عەقیدە ومەنهەجمانە, 
+مێژووی لاڕێبوان وواقیعی حاشا هەڵنەگر شاهیدمانە"
+</strong></p>
+</div>
+
+
+<div class="rukar">
+<p align="center"><strong> ئامۆژگاریەکی زۆر پێویست و لەجێ و زەڕورەتی زۆری ئەم سەردەمەیە ، 
+<br/>
+ 
+<br/>
+بۆ موسوڵمانان بەگشتی ، تاڵب عیلم بەتایبەت ، بەتایبەتر ئەو گەنج و برایانەی هیدایەتی ئیلاهیان پێ بەخشراوە ، بۆ مەنهەجی ڕاستەقینەی ئەهلی سوننە لەهەموو ڕووێک و بوارێک و بابەتەکانە،
+اللەپاداشتی مامۆستای بەڕێز بداتەوە بۆ ئەم ئامۆژگاریە لەجێ و دڵسۆزانەیەی ...
+</strong></p>
+</div>
+<p> ⠀ </p>
+
+<p> ⠀ </p>
+
+<p style="background: #FF5116;box-shadow:1px 3px 3px #1E1F20;border-radius:20px;color:#FFFFFF;padding:0 0 0 155px;text-shadow:1px 1px 4px gray;">کتێبەکان</p>
+
+<class id="book">
+
+<img src="babat.JPG"style="width:342px;border-radius:20px;">
+<div class="mtut">
+<p><strong>بابەتی بانگەواز</strong></p>
+<div class="dugma">
+<button style="margin:-15px 0 0 140px;background: #1E1F20;border-radius:15px;width:70px;height:25px;border:solid 1px #FFBA00;">
+<a href="bangawaz.pdf"style="color:#FFBA00;">
+خوێندنەوە
+</a>
+</button>
+</div>
+</div>
+
+
+
+
+<img src="znjera.JPG"style="width:342px;border-radius:20px;">
+<div class="znjera">
+<p><strong>زنجیرەیەک بۆ تێگەشتن</strong></p>
+<div class="memga">
+<button style="margin:-15px 0 0 140px;background: #1E1F20;border-radius:15px;width:70px;height:25px;border:solid 1px #FFBA00;">
+<a href="tegashtn.pdf"style="color:#FFBA00;">
+خوێندنەوە
+</a>
+</button>
+</div>
+</div>
+
+
+</class>
+
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+            const navbarToggle = document.querySelector('.navbar-toggle');
+            const navbarLinks = document.querySelector('.navbar-links');
+            const container = document.querySelector('.container');
+ 
+            navbarToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                navbarLinks.classList.toggle('active');
+                container.classList.toggle('active');
+            });
+ 
+            navbarLinks.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    setTimeout(() => {
+                        navbarLinks.classList.remove('active');
+                        container.classList.remove('active');
+                    }, 300);
+                }
+            });
+ 
+
+            document.addEventListener('click', function(e) {
+                if (!navbarLinks.contains(e.target) && !navbarToggle.contains(e.target)) {
+                    setTimeout(() => {
+                        navbarLinks.classList.remove('active');
+                        container.classList.remove('active');
+                    }, 300);
+                }
+            });
+        });
+
+    </script>
+ 
+</body>
+ 
+</html>
